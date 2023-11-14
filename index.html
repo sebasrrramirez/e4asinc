@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Buscapokemons</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Busca Pokemones</h1>
+      <label for="pokemon-number">Ingrese el número de Pokemon: </label>
+      <input type="number" id="pokemon-number" min="1" max="807" />
+      <!-- 807 es el máximo de Pokemon en PokeAPI -->
+      <button id="search-button" class="btn btn-primary">Buscar</button>
+      <div id="pokemon-container"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
